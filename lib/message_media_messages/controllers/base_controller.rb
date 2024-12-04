@@ -11,6 +11,7 @@ module MessageMediaMessages
     def initialize(http_client: nil, http_call_back: nil, account_id: nil)
       @http_client = http_client || FaradayClient.new
       @http_call_back = http_call_back
+      @account_id = account_id
 
       @global_headers = {
         'user-agent' => 'messagemedia-messages'
