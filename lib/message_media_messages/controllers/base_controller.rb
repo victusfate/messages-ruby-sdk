@@ -16,7 +16,7 @@ module MessageMediaMessages
       @global_headers = {
         'user-agent' => 'messagemedia-messages'
       }
-      @global_headers['Account'] = :account_id unless :account_id.nil?
+      @global_headers['Account'] = account_id unless account_id.nil?
 
     end
 
